@@ -9,15 +9,337 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css?t=1647600400983">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
- @@include('./components/header.html')
+ <header class="header">
+    <div class="container container--xl">
+        <div class="header__content">
+            <a href="/" class="header__logo"><img src="/images/logo.png" alt=""></a>
+            <div class="header__nav-wrap" id="navMenu">
+                <button type="button" class="header__nav-close" id="navCloseBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <nav class="nav header__nav">
+                    <div class="nav__item nav-item nav-item--submenu">
+                        <a href="#" class="nav-item__title">VPN Reviews</a>
+                        <ul class="nav-item__list">
+                            <li><a href="#">NordVPN Review</a></li>
+                            <li><a href="#">ExpressVPN Review</a></li>
+                            <li><a href="#">Private Internet Access Review</a></li>
+                            <li><a href="#">PureVPN Review</a></li>
+                            <li><a href="#">CyberGhost VPN Review</a></li>
+                            <li><a href="#">Tunnelbear Review</a></li>
+                            <li><a href="#">Ivacy VPN Review</a></li>
+                            <li><a href="#">ProtonVPN Review</a></li>
+                            <li><a href="#">HideMyAss Review</a></li>
+                            <li><a href="#">VPN Unlimited Review</a></li>
+                            <li><a href="#">WindScribe VPN Review</a></li>
+                            <li><a href="#">Avast VPN Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__item nav-item nav-item--submenu">
+                        <a href="#" class="nav-item__title">VPN Fights</a>
+                        <ul class="nav-item__list">
+                            <li><a href="#">NordVPN Review</a></li>
+                            <li><a href="#">ExpressVPN Review</a></li>
+                            <li><a href="#">Private Internet Access Review</a></li>
+                            <li><a href="#">PureVPN Review</a></li>
+                            <li><a href="#">CyberGhost VPN Review</a></li>
+                            <li><a href="#">Tunnelbear Review</a></li>
+                            <li><a href="#">Ivacy VPN Review</a></li>
+                            <li><a href="#">ProtonVPN Review</a></li>
+                            <li><a href="#">HideMyAss Review</a></li>
+                            <li><a href="#">VPN Unlimited Review</a></li>
+                            <li><a href="#">WindScribe VPN Review</a></li>
+                            <li><a href="#">Avast VPN Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__item nav-item nav-item--submenu">
+                        <a href="#" class="nav-item__title">Best VPN for</a>
+                        <ul class="nav-item__list">
+                            <li><a href="#">NordVPN Review</a></li>
+                            <li><a href="#">ExpressVPN Review</a></li>
+                            <li><a href="#">Private Internet Access Review</a></li>
+                            <li><a href="#">PureVPN Review</a></li>
+                            <li><a href="#">CyberGhost VPN Review</a></li>
+                            <li><a href="#">Tunnelbear Review</a></li>
+                            <li><a href="#">Ivacy VPN Review</a></li>
+                            <li><a href="#">ProtonVPN Review</a></li>
+                            <li><a href="#">HideMyAss Review</a></li>
+                            <li><a href="#">VPN Unlimited Review</a></li>
+                            <li><a href="#">WindScribe VPN Review</a></li>
+                            <li><a href="#">Avast VPN Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__item nav-item">
+                        <a href="#" class="nav-item__title">Blog</a>
+                    </div>
+                </nav>
+            </div>
+            <button class="header__menu-btn" id="navOpenBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
  <main>
-     @@include('./components/breadcrumbs.html')
-     @@include('./components/content.html')
+     <div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__wrap">
+            <a href="#" class="breadcrumbs__item">Home</a>
+            <a href="#" class="breadcrumbs__item active">NordVPN – 5 Security Updates For 2020</a>
+        </div>
+    </div>
+</div>
+
+     <section class="content">
+    <div class="container">
+        <h1>NordVPN – 5 Security Updates For 2020</h1>
+        <h5>
+            The TOR browser runs on the tor network, which encrypts data and hides IP addresses as information
+            is sent from one computer to another. Read the article and find out more about tor network and security.
+        </h5>
+        <p>
+            NordVPN is a VPN of its word. <a href="#">NordVPN</a> promised five major security updates at the end
+            of October 2019, and the company has been working on them non-stop. The security updates are
+            offshoots of a reported incident involving NordVPN and a third-party datacenter.
+        </p>
+        <p>
+            NordVPN has to take measures that will make its security to the next level,
+            ensuring that nothing like that will ever happen again.
+        </p>
+        <p>
+            NordVPN’s plans are focused on the future. Some of those steps have always been part of NordVPN,
+            but after the reported breach, they want to make them even stronger.
+        </p>
+        <p>
+            Other measures are new features that will help the company go the extra mile in ensuring that
+            they earn the trust of the public, the end-users, and the cybersecurity community.
+        </p>
+        <img
+           alt="Nordvpn security updates"
+           src="https://bestvpncanada.com/wp-content/uploads/2020/01/Nordvpn-security-updates.jpg"
+           class="ct-image entered lazyloaded"
+           srcset="https://bestvpncanada.com/wp-content/uploads/2020/01/Nordvpn-security-updates.jpg 1000w,
+            https://bestvpncanada.com/wp-content/uploads/2020/01/Nordvpn-security-updates-300x135.jpg 300w,
+             https://bestvpncanada.com/wp-content/uploads/2020/01/Nordvpn-security-updates-768x346.jpg 768w
+        ">
+        <h2>
+            1. Partnerships
+        </h2>
+        <p>
+            NordVPN announced a partnership with VerSprite, a leader in operational risk management and security
+            advisory services. VerSprite enables businesses to improve the protection of critical assets to ensure
+            compliance and manage risk. The company helps clients chart a course that brings security and business
+            together.
+        </p>
+        <p>
+            The partnership with VerSprite was an offshoot of news about a datacenter hack related to a single
+            NordVPN’s server in Finland. It is essential to mention that no customer data was affected or accessed
+            during the incident. While NordVPN’s applications remain as trustworthy as ever, the development left a
+            negative impression on users, which led to the set of measures to improve its security.
+        </p>
+        <p>
+            The partnership between NordVPN and VerSprite focuses on penetration testing, intrusion handling,
+            vendor risk assessment, and source code analysis.
+        </p>
+        <p>
+            Penetration testers play a crucial role in NordVPN’s security efforts. Their job is to prod the
+            infrastructure for weaknesses and mitigate their vulnerabilities. This goal results in a long-term
+            strategic partnership with VerSprite. VerSprite will work with Nord’s in-house team of penetration
+            testers that will challenge the infrastructure to ensure the security of customers. VerSprite will
+            help form an independent cybersecurity advisory committee.
+        </p>
+        <p>
+            NordVPN is also in contact with other big names in cybersecurity to work out better
+            and cost-effective security practices and better business outcomes.
+        </p>
+        <h2>
+            2. Bug Bounty Program
+        </h2>
+        <p>
+            NordVPN announced a security plan that will make the company more secure than ever for 2020 and beyond.
+            Any bugs in NordVPN’s system are now wanted dead or alive, with
+            the company launching its bug bounty program.
+        </p>
+        <p>
+            NordVPN has just increased the size of its penetration testing team to potentially
+            the entire cybersecurity community. Nord encourages in-house penetration testers who
+            are talented white-hat hackers who work hard to keep NordVPN one of the most secure
+            VPNs in the world. However, in-house penetration testers are very limited in number.
+        </p>
+        <p>
+            NordVPN opens its doors to enterprising cybersecurity pros around the world who can now search
+            the company’s system for any flaw large or small and get paid for it. Bug hunters rewarded for
+            anything that will impact the company’s service – from minor bugs to critical flaws.
+        </p>
+        <p>
+            The reward system allows grey or black-hat hackers who find any weaknesses in the Nord’s systems
+            to notify them for an easy payday instead of exploiting those flaws. The bug bounty program will
+            have a profound effect on ensuring the quality and security of NordVPN’s service.
+        </p>
+        <h2>
+            3. Infrastructure Security Audit
+        </h2>
+        <p>
+            NordVPN plans to complete a full-scale third-party independent security audit in 2020.
+            After selecting an independent vendor, the third will conduct a review that will cover VPN software,
+            infrastructure hardware, backend architecture, backend code, and internal procedures.
+        </p>
+        <p>The 2020 security audit is not the first time for NordVPN. NordVPN follows the
+            examples of other VPN providers by having its servers audited to reassure users
+            that its servers are secure.
+        </p>
+        <p>The infrastructure security audit, conducted by one of the big four auditing firms, showed
+            that NordVPN does not store personal IP addresses and does not keep a log of internet activities
+            of its subscribers.
+        </p>
+        <p>
+            Independent audits have become popular among VPN providers, including NordVPN.
+        </p>
+        <h2>
+            4. Vendor Security Assessment and Higher Security Standards
+        </h2>
+        <p>
+            NordVPN is in the middle of assessing the datacenters they work with after increasing the security
+            standard their current providers have to meet. NordVPN is planning to build out a network of wholly-owned
+            collocated servers and is now reviewing its infrastructure to ensure that there are existing and
+            exploitable vulnerabilities.
+        </p>
+        <p>
+            NordVPN is currently on the finishing stages of its infrastructure review to eliminate
+            exploitable vulnerabilities left by third-party service providers.
+        </p>
+        <p>
+            The aim is to make every part of NordVPN faster, stronger, and more secure,
+            from the infrastructure and code to its teams and partners.
+        </p>
+        <h2>
+            5. Diskless Servers
+        </h2>
+        <p>
+            NordVPN is in the middle of assessing the datacenters they work with after increasing the security
+            standard their current providers have to meet. NordVPN is planning to build out a network of wholly-owned
+            collocated servers and is now reviewing its infrastructure to ensure that there are existing and
+            exploitable vulnerabilities.
+        </p>
+        <p>
+            NordVPN is currently on the finishing stages of its infrastructure review to eliminate
+            exploitable vulnerabilities left by third-party service providers.
+        </p>
+        <p>
+            The aim is to make every part of NordVPN faster, stronger, and more secure,
+            from the infrastructure and code to its teams and partners.
+        </p>
+        <h2>
+            VPN Coalition
+        </h2>
+        <p>
+            On December 11, 2019, NordVPN became a founding member of the VPN Trust Initiative (VTI). VTI is a
+            coalition of leading VPN providers that speaks with one voice on the US internet and cybersecurity
+            policy and keeps lawmakers informed.
+        </p>
+        <p>
+            NordVPN firmly believes that cybersecurity-literate lawmakers are key and partners to freer
+            and more secure internet, with VPNs becoming a considerable part of that picture.
+        </p>
+        <p>
+            The VTI aims to institute change by getting in touch with the three key groups: technologists,
+            legislators, and end-users. The aim is to achieve a self-regulatory industry and change the trajectory
+            of VPN discourse through the creation, advocacy, and validation of policies that aim to strengthen trust
+            and transparency while, at the same time, mitigating risk for end-users.
+        </p>
+    </div>
+</section>
+
  </main>
- @@include('./components/footer.html')
-<script src="/js/scripts.js?t=1647600400983" defer></script>
+ <footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <p>Some article</p>
+                    <ul>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <p>Some article</p>
+                    <ul>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <p>Some article</p>
+                    <ul>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <p>Some article</p>
+                    <ul>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                        <li><a href="#">some links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__basement">
+                <a href="#" class="footer__logo">
+                    <img src="/images/logo-light.png" alt="logo">
+                </a>
+                <p class="footer__copyright">
+                    Considered as one of the best and the oldest-existing torrent sites there is,
+                    The Pirate Bay is an Internet-based repository of software and entertainment content.
+                    And this has been gracing the greater Internet populace with its easy to use interface
+                    since its maiden year in 2003.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/scripts.js" defer></script>
 </body>
 </html>
